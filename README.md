@@ -1,4 +1,4 @@
-# nodejs-webserver-bootstrap
+# base-nodejs-express-gulp-project
 
 ## Requirements
 -  [Gulp](https://gulpjs.com/) build system: npm install gulp-cli --global
@@ -8,4 +8,4 @@
 - Run "npm install" to install all project dependencies from npm
 - Run "typings install" to install the project typings
 - Run "gulp start" to start the server
-
+ 
