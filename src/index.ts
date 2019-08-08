@@ -15,5 +15,5 @@ app.use(bodyParser.json());
 app.use(methodOverride());
 
 app.listen(SERVER_PORT, () => {
-	logger.log('Server Port:', SERVER_PORT);
+	logger.log('info', `Server Port: ${SERVER_PORT}`);
 });

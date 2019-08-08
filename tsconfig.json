@@ -1,10 +1,19 @@
 {
-	"compilerOptions": {
-		"target": "ES2015",
-		"module": "commonjs",
-        "sourceMap": true,
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "commonjs",
+        "moduleResolution": "node",
         "noImplicitAny": false,
+        "sourceMap": true,
         "removeComments": false,
-        "preserveConstEnums": true
-	}
+        "preserveConstEnums": true,
+        "allowSyntheticDefaultImports": true,
+        "suppressExcessPropertyErrors": true,
+        "typeRoots": [
+            "node_modules/@types"
+        ]
+    },
+    "exclude": [
+        "node_modules",
+    ]
 }

@@ -1,12 +1,6 @@
 const gulp = require('gulp');
-const path = require('path');
-const package = require('./package.json');
-const fs = require('fs');
-const gulpWatch = require('gulp-watch');
-const gulpBump = require('gulp-bump');
 const gulpNodemon = require('gulp-nodemon');
 const gulpClean = require('gulp-clean');
-const gulpAll = require('gulp-all');
 const gulpTypescript = require("gulp-typescript").createProject('tsconfig.json');
 
 const DIST_FOLDER = "./bin";
