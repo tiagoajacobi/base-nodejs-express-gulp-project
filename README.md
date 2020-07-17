@@ -1,7 +1,8 @@
 # base-nodejs-express-gulp-project
 
 ## Requirements
--  [Gulp](https://gulpjs.com/) build system: npm install gulp-cli --global
+- [NodeJs](https://nodejs.org/) >= 10.20.1
+- [Gulp](https://gulpjs.com/) build system: npm install gulp-cli --global
 
 ## How to start
 - Run "npm install" to install all project dependencies from npm
