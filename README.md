@@ -5,5 +5,7 @@
 
 ## How to start
 - Run "npm install" to install all project dependencies from npm
-- Run "gulp start" to start the server
- 
+- Run "gulp clean" to clean build folder
+- Run "gulp build" to clean and build the project
+- Run "gulp start" to clean, build and start the server
+

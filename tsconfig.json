@@ -1,7 +1,8 @@
 {
     "compilerOptions": {
-        "target": "ES6",
-        "module": "commonjs",
+        "lib": ["ES2018"],
+        "target": "ES2018",
+        "module": "CommonJS",
         "moduleResolution": "node",
         "noImplicitAny": false,
         "sourceMap": true,
@@ -14,6 +15,6 @@
         ]
     },
     "exclude": [
-        "node_modules",
+        "node_modules"
     ]
 }
