@@ -1,21 +1,22 @@
 const gulp = require('gulp');
 const del = require('del');
 const gulpNodemon = require('gulp-nodemon');
-const gulpTypescript = require('gulp-typescript').createProject('tsconfig.json');
+const gulpTypescript = require('gulp-typescript');
 
 const DIST_FOLDER = './bin';
+const tsProject = gulpTypescript.createProject('tsconfig.json');
 
-gulp.task('clean', cleanProjectDist = () => {
+const cleanProjectDist = () => {
     return del(`${DIST_FOLDER}/**/*`);
-});
+};
 
-gulp.task('build', gulp.series(['clean'], buildProject = () => {
+const buildProject = () => {
     return gulp.src(['typings/**/*.ts', 'src/**/*.ts'])
-        .pipe(gulpTypescript())
+        .pipe(tsProject())
         .pipe(gulp.dest(`${DIST_FOLDER}`));
-}));
+};
 
-gulp.task('start', gulp.series(['build'], startApp = (done) => {
+const startApp = (done) => {
     return gulpNodemon({
         exec: 'node --inspect=5858',
         ignore: '*',
@@ -23,4 +24,8 @@ gulp.task('start', gulp.series(['build'], startApp = (done) => {
         env: { 'NODE_ENV': 'development' },
         done: done
     });
-}));
+};
+
+gulp.task('clean', cleanProjectDist);
+gulp.task('build', gulp.series(['clean'], buildProject));
+gulp.task('start', gulp.series(['build'], startApp));
