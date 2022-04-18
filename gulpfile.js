@@ -3,7 +3,7 @@ const del = require('del');
 const gulpNodemon = require('gulp-nodemon');
 const gulpTypescript = require('gulp-typescript');
 
-const DIST_FOLDER = './bin';
+const DIST_FOLDER = './.dist';
 const tsProject = gulpTypescript.createProject('tsconfig.json');
 
 const cleanProjectDist = () => {

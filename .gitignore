@@ -1,4 +1,4 @@
 node_modules/
 typings/
-bin/
+.dist/
 package-lock.json
