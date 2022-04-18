@@ -1,6 +1,6 @@
 {
     "name": "base-nodejs-express-gulp-project",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "repository": {
         "type": "git",
         "url": "https://github.com/tiagoajacobi/base-nodejs-express-gulp-project"
@@ -9,7 +9,7 @@
     "author": "Quicargo LTD",
     "license": "ISC",
     "engines": {
-        "node": ">=10.20.1"
+        "node": ">=v16.14.1"
     },
     "dependencies": {
         "@types/compression": "^1.7.0",
