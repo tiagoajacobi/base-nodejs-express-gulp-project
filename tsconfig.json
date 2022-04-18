@@ -1,6 +1,8 @@
 {
     "compilerOptions": {
-        "lib": ["ES2018"],
+        "rootDir": ".",
+        "baseUrl": ".",
+        "lib": ["ES2018", "DOM"],
         "target": "ES2018",
         "module": "CommonJS",
         "moduleResolution": "node",
